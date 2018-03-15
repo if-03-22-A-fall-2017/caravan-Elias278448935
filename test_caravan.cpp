@@ -12,7 +12,7 @@
 */
 #include "general.h"
 #include "caravan.h"
-
+#include "stdio.h"
 #include "test_caravan.h"
 
 /******************************************************************************
@@ -184,8 +184,9 @@ TEST(caravan_speed)
 
   PackAnimal mitzi = new_horse("Mitzi", 40);
   add_load(mitzi, 3);
-  add_pack_animal(gobi_express, mitzi);
 
+  add_pack_animal(gobi_express, mitzi);
+    printf("Hallo\n" );
   PackAnimal franzi = new_camel("Franzi", 14);
   add_load(franzi, 5);
   add_pack_animal(gobi_express, franzi);
